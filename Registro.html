@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comentarios</title>
+    <style>
+        body {
+            background-color: hsl(247, 90%, 69%); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="procesar_formulario.php" method="post" enctype="multipart/form-data">
+        <h1>Hola! agrega un comentario</h1>
+
+        <fieldset>
+            <legend>Datos</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br>
+
+            <fieldset>
+                <label for="objetivo">Comentar</label>
+                <textarea id="objetivo" name="objetivo" rows="4" cols="50" required></textarea>
+            </fieldset>
+
+            
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
